@@ -1,0 +1,60 @@
+<svg width="280" height="280" viewBox="0 0 280 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g id="Favicon">
+        <circle id="Ellipse 7" cx="140" cy="140" r="140" fill="white" />
+        <g id="Logo Only">
+            <g id="Logo (Traced)">
+                <mask id="path-2-inside-1_0_1" fill="white">
+                    <path
+                        d="M153.625 141.609V104.954V68.2983H186.216H218.806V135.639V202.982L211.516 196.422C207.506 192.814 192.84 179.005 178.926 165.735L153.625 141.609Z" />
+                </mask>
+                <path
+                    d="M153.625 141.609V104.954V68.2983H186.216H218.806V135.639V202.982L211.516 196.422C207.506 192.814 192.84 179.005 178.926 165.735L153.625 141.609Z"
+                    fill="url(#paint0_linear_0_1)" />
+                <path
+                    d="M153.625 141.609V104.954V68.2983H186.216H218.806V135.639V202.982L211.516 196.422C207.506 192.814 192.84 179.005 178.926 165.735L153.625 141.609Z"
+                    fill="url(#paint1_linear_0_1)" />
+                <path
+                    d="M153.625 141.609V104.954V68.2983H186.216H218.806V135.639V202.982L211.516 196.422C207.506 192.814 192.84 179.005 178.926 165.735L153.625 141.609Z"
+                    stroke="url(#paint2_linear_0_1)" stroke-width="2" mask="url(#path-2-inside-1_0_1)" />
+            </g>
+            <g id="Logo (Traced)_2">
+                <mask id="path-3-inside-2_0_1" fill="white">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M61 139.6V213.77H96.1633H131.327V209.313V204.856L136.604 209.313L141.881 213.77H180.744H219.607L213.631 208.01C172.85 168.698 64.2642 66.6141 62.5815 66.003C61.6329 65.6587 61 95.0854 61 139.6Z" />
+                </mask>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M61 139.6V213.77H96.1633H131.327V209.313V204.856L136.604 209.313L141.881 213.77H180.744H219.607L213.631 208.01C172.85 168.698 64.2642 66.6141 62.5815 66.003C61.6329 65.6587 61 95.0854 61 139.6Z"
+                    fill="url(#paint3_linear_0_1)" stroke="url(#paint4_linear_0_1)" stroke-width="2"
+                    mask="url(#path-3-inside-2_0_1)" />
+            </g>
+        </g>
+    </g>
+    <defs>
+        <linearGradient id="paint0_linear_0_1" x1="144.018" y1="68.2984" x2="222.096" y2="70.4242"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#FF7000" />
+            <stop offset="0.9999" stop-color="#E2985E" />
+            <stop offset="1" stop-color="#E2995F" />
+        </linearGradient>
+        <linearGradient id="paint1_linear_0_1" x1="144.018" y1="68.2984" x2="222.096" y2="70.4242"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#7000FF" />
+            <stop offset="1" stop-color="#5F9BE2" />
+        </linearGradient>
+        <linearGradient id="paint2_linear_0_1" x1="144.018" y1="68.2984" x2="222.096" y2="70.4242"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#FFED46" />
+            <stop offset="1" stop-color="#FF62C0" />
+        </linearGradient>
+        <linearGradient id="paint3_linear_0_1" x1="37.6215" y1="66" x2="227.063" y2="77.4397"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#FFED46" />
+            <stop offset="1" stop-color="#FF62C0" />
+        </linearGradient>
+        <linearGradient id="paint4_linear_0_1" x1="37.6215" y1="63.994" x2="227.082" y2="75.2814"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#E10062" />
+            <stop offset="1" stop-color="#38166D" />
+        </linearGradient>
+    </defs>
+</svg>

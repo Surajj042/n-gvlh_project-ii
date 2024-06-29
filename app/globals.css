@@ -1,0 +1,407 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("../styles/theme.css");
+
+html,
+body,
+:root {
+  height: 100%;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 224 71.4% 4.1%;
+    --card: 0 0% 100%;
+    --card-foreground: 224 71.4% 4.1%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 224 71.4% 4.1%;
+    --primary: 262.1 83.3% 57.8%;
+    --primary-foreground: 210 20% 98%;
+    --secondary: 220 14.3% 95.9%;
+    --secondary-foreground: 220.9 39.3% 11%;
+    --muted: 220 14.3% 95.9%;
+    --muted-foreground: 220 8.9% 46.1%;
+    --accent: 220 14.3% 95.9%;
+    --accent-foreground: 220.9 39.3% 11%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 20% 98%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 262.1 83.3% 57.8%;
+    --radius: 1rem;
+  }
+
+  .dark {
+    --background: 224 71.4% 4.1%;
+    --foreground: 210 20% 98%;
+    --card: 224 71.4% 4.1%;
+    --card-foreground: 210 20% 98%;
+    --popover: 224 71.4% 4.1%;
+    --popover-foreground: 210 20% 98%;
+    --primary: 263.4 70% 50.4%;
+    --primary-foreground: 210 20% 98%;
+    --secondary: 215 27.9% 16.9%;
+    --secondary-foreground: 210 20% 98%;
+    --muted: 215 27.9% 16.9%;
+    --muted-foreground: 217.9 10.6% 64.9%;
+    --accent: 215 27.9% 16.9%;
+    --accent-foreground: 210 20% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 20% 98%;
+    --border: 215 27.9% 16.9%;
+    --input: 215 27.9% 16.9%;
+    --ring: 263.4 70% 50.4%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+
+  .flex-between {
+    @apply flex items-center justify-between;
+  }
+
+  .flex-start {
+    @apply flex items-center justify-start;
+  }
+
+  .card-wrapper {
+    @apply bg-light-800/40 shadow-light-100 dark:bg-slate-900 dark:shadow-dark-200;
+  }
+
+  .btn {
+    @apply bg-light-800 dark:bg-dark-300 !important;
+  }
+
+  .btn-secondary {
+    @apply bg-light-800 dark:bg-dark-400 !important;
+  }
+
+  .btn-tertiary {
+    @apply bg-light-700 dark:bg-dark-300 !important;
+  }
+
+  .markdown {
+    @apply prose max-w-full prose-headings:text-dark-400 prose-h1:text-dark-300 prose-h2:text-dark-300 prose-p:text-dark-500 prose-ol:text-dark-500 prose-ul:text-dark-500 dark:prose-headings:text-white dark:prose-p:text-light-700 dark:prose-strong:text-white dark:prose-ol:text-light-700 dark:prose-ul:text-light-700;
+  }
+
+  .primary-gradient {
+    background: linear-gradient(129deg, #ad00ff 0, #e25f5f 100%);
+  }
+  .purple2red {
+    background: linear-gradient(129deg, #ad00ff 0, #e25f5f 100%);
+  }
+  .yellow2pink {
+    background: linear-gradient(129deg, #ffed46 0, #ff62c0 100%);
+  }
+  .purple2blue {
+    background: linear-gradient(129deg, #7000ff 0, #5f9be2 100%);
+  }
+  .pink2blue {
+    background: linear-gradient(129deg, #e10062 0, #38166d 100%);
+  }
+  .lyellow2lpink {
+    background: linear-gradient(129deg, #ffefbb 0, #ffc2e5 100%);
+  }
+
+  .dark-gradient {
+    background: linear-gradient(
+      232deg,
+      rgba(48, 27, 0, 0.855) 0%,
+      rgba(0, 0, 0, 0.7) 100%
+    );
+  }
+
+  .tab {
+    @apply z-10 bg-light-800 text-light-500 data-[state=active]:bg-primary-100 data-[state=active]:text-purple-400 dark:bg-dark-400 dark:data-[state=active]:bg-dark-300 max-sm:w-full !important;
+  }
+
+  .tab-content {
+    @apply max-sm:mt-2;
+  }
+
+  @media (max-height: 635px) {
+    .h-scroll-mobile {
+      height: 635;
+      overflow-y: auto;
+    }
+  }
+
+  /* Scrollbar styles for all containers */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 9px; /* Width of the scrollbar */
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: linear-gradient(
+      129deg,
+      #ffefbb 0%,
+      #ffc2e5 100%
+    ); /* Background color of the scrollbar track */
+  }
+
+  /* Dark mode scrollbar styles */
+  .dark .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: linear-gradient(
+      129deg,
+      #e10062 0%,
+      #38166d 100%
+    ); /* Dark background color of the scrollbar thumb */
+  }
+  .dark .custom-scrollbar::-webkit-scrollbar-track {
+    background: linear-gradient(
+      129deg,
+      #e10062 0%,
+      #38166d 100%
+    ); /* Dark background color of the scrollbar track */
+
+    border-radius: 10px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: linear-gradient(
+      129deg,
+      #ffefbb 0%,
+      #ffc2e5 100%
+    ); /* Color of the scrollbar thumb */
+
+    /* Round the thumb */
+    border-radius: 10px;
+    /* Space around thumb */
+    /* border: 3px solid #f1f1f1; */
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(
+      129deg,
+      #9a8f66 0%,
+      #deabc8 100%
+    ); /* Color of the thumb on hover */
+  }
+}
+/* TODO: These .text can be removed */
+.primary-text-gradient {
+  background: linear-gradient(129deg, #ad00ff 0, #e25f5f 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.text-pink2blue {
+  background: linear-gradient(129deg, #e10062 0, #38166d 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-dark {
+  background: linear-gradient(0, #ffefba 0, #ffffff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.no-focus {
+  @apply focus-visible:ring-0 focus-visible:ring-transparent focus-visible:ring-offset-0 !important;
+}
+
+.active-theme {
+  filter: invert(53%) sepia(98%) saturate(3332%) hue-rotate(0deg)
+    brightness(104%) contrast(106%) !important;
+}
+
+.light-gradient {
+  background: linear-gradient(
+    132deg,
+    rgba(247, 249, 255, 0.5) 0%,
+    rgba(229, 237, 255, 0.25) 100%
+  );
+}
+
+/* Markdown Start */
+.markdown a {
+  color: #1da1f2;
+}
+
+.markdown a,
+code {
+  /* These are technically the same, but use both */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  -ms-word-break: break-all;
+  /* This is the dangerous one in WebKit, as it breaks things wherever */
+  word-break: break-all;
+  /* Instead use this non-standard one: */
+  word-break: break-word;
+
+  /* Adds a hyphen where the word breaks, if supported (No Blink) */
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+
+  padding: 2px;
+  color: #f54971 !important;
+}
+
+.markdown pre {
+  display: grid;
+  width: 100%;
+}
+
+.markdown pre code {
+  width: 100%;
+  display: block;
+  overflow-x: auto;
+
+  color: inherit !important;
+}
+/* Markdown End */
+
+/* Clerk
+.cl-internal-b3fm6y {
+  background: linear-gradient(129deg, #ff7000 0%, #e2995f 100%) !important;
+}
+
+.hash-span {
+  margin-top: -140px;
+  padding-bottom: 140px;
+  display: block;
+} */
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* ======== stream css overrides ======== */
+.str-video__call-stats {
+  max-width: 500px;
+  position: relative;
+}
+
+.str-video__speaker-layout__wrapper {
+  max-height: 700px;
+}
+
+.str-video__participant-details {
+  color: white;
+}
+
+.str-video__menu-container {
+  color: white;
+}
+
+.str-video__notification {
+  color: white;
+}
+
+.str-video__participant-list {
+  background-color: #1c1f2e;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  height: 100%;
+}
+
+.str-video__call-controls__button {
+  height: 40px;
+}
+
+/* .str-video__composite-button__button-group {
+  background-color: #f1f5f9 !important;
+}
+
+.str-video__icon {
+  background-color: #1c1f2e !important;
+} */
+
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+.glassmorphism2 {
+  background: rgba(18, 17, 17, 0.25);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.dark .EasyMDEContainer .CodeMirror {
+  background: rgba(82, 94, 146, 0.277);
+  color: #ffffff;
+}
+
+.dark
+  .CodeMirror
+  .cm-spell-error:not(.cm-url):not(.cm-comment):not(.cm-tag):not(.cm-word) {
+  background: rgba(176, 4, 244, 0);
+}
+
+/* ==== clerk class override ===== */
+
+.cl-cardBox {
+  background-color: #fff;
+  box-shadow: 5px -5px 400px 10px rgb(133, 68, 189);
+}
+
+.cl-internal-180wb59 {
+  display: none;
+}
+
+.ql-container {
+  font-size: 16px !important;
+}
+
+.dark .ql-snow * {
+  color: white !important;
+}
+.ql-editor * {
+  color: black !important;
+}
+.dark .ql-editor * {
+  color: white !important;
+}
+.dark .ql-picker-options {
+  background-color: #1f2937 !important;
+}
+
+/* animation */
+
+.show-block {
+  width: 100%;
+  max-width: 350px;
+  display: block;
+  animation: show 0.7s forwards linear;
+}
+
+@keyframes show {
+  0% {
+    animation-timing-function: ease-in;
+    width: 0%;
+  }
+
+  100% {
+    animation-timing-function: ease-in;
+    width: 100%;
+  }
+}
+
+@import "~@uploadthing/react/styles.css";
