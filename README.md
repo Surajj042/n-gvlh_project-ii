@@ -5,6 +5,7 @@
   Empowering learning through interactive video courses and a vibrant community.
 </p>
 
+<br>
 
 **🚀  What is N-GVLH?**
 
@@ -30,7 +31,7 @@ N-GVLH is an innovative educational platform designed to connect students and te
 
 * **Notifications & Reminders:** Never miss an important meeting with our timely notification system.
 
-<div style="height: 20px;"> </div>
+<br>
 
 **✨ Tech Stack**
 
@@ -48,14 +49,14 @@ N-GVLH is an innovative educational platform designed to connect students and te
 | [Tailwind CSS](https://tailwindcss.com/) | A utility-first CSS framework. |
 | [Stripe](https://stripe.com/) | Online payment processing platform. |
 
-<div style="height: 20px;"> </div>
+<br>
 
 **🚀  Get Started**
 
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/your-username/n-gvhl.git
+   git clone https://github.com/LowkeyGud/n-gvlh_project-ii.git
    ```
 
 2. **Install Dependencies:**
@@ -85,28 +86,28 @@ N-GVLH is an innovative educational platform designed to connect students and te
     * **`components`:** Reusable UI components.
     * **`api`:** Serverless functions.
     * **`utils`:** Helper functions and utilities.
-<div style="height: 20px;"> </div>
+<br>
 
 
 **📸 Screenshots**
 
-<div style="height: 20px;"> </div>
+<br>
 
 
 **💡 Contributing**
 
 Contributions are welcome!
-<div style="height: 20px;"> </div>
+<br>
 
 **🌟 About**
 
 This project is developed for my 3rd year project (**Project II**).
-<div style="height: 20px;"> </div>
+<br>
 
 **⚠️ License**
 
 This project is licensed for educational purposes only. It may not be used for commercial purposes or hosted on any online platform. It is intended for learning and experimentation on your own computer.
-<div style="height: 20px;"> </div>
+<br>
 
 
 **📂 Folder Structure**
