@@ -354,3 +354,9 @@ n-gvlh_project-ii
  ┣ tailwind.config.ts
  ┗ tsconfig.json
 ```
+
+## Contributors
+- - [@Surajj042](https://github.com/Surajj042) (Suraj Gurung)
+- - [@LowkeyGud](https://github.com/LowkeyGud) (Chandramani Regmi)
+
+This project was built in collaboration.
